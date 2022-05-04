@@ -1,4 +1,3 @@
-import React from "react";
 import "./widget.scss";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
@@ -24,10 +23,10 @@ const Widget = ({ type }) => {
             className="icon"
             style={{
               color: "crimson",
-              backgroundColor: "rgba(255, 0, 0, 0.2)",
+              backgroundColor: "rgba(255, 0, 0, 0.2)"
             }}
           />
-        ),
+        )
       };
       break;
     case "order":
@@ -40,10 +39,10 @@ const Widget = ({ type }) => {
             className="icon"
             style={{
               backgroundColor: "rgba(218, 165, 32, 0.2)",
-              color: "goldenrod",
+              color: "goldenrod"
             }}
           />
-        ),
+        )
       };
       break;
     case "earning":
@@ -56,12 +55,12 @@ const Widget = ({ type }) => {
             className="icon"
             style={{ backgroundColor: "rgba(0, 128, 0, 0.2)", color: "green" }}
           />
-        ),
+        )
       };
       break;
-    case "balance":
+    case "product":
       data = {
-        title: "BALANCE",
+        title: "PRODUCTS",
         isMoney: true,
         link: "See details",
         icon: (
@@ -69,10 +68,10 @@ const Widget = ({ type }) => {
             className="icon"
             style={{
               backgroundColor: "rgba(128, 0, 128, 0.2)",
-              color: "purple",
+              color: "purple"
             }}
           />
-        ),
+        )
       };
       break;
     default:

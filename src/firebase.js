@@ -1,8 +1,10 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_KEY,
+  apiKey: "AIzaSyBY0GH-IfDZWUdp34Ti748wiFuvujic48A",
   authDomain: "admin-panel-d2bfc.firebaseapp.com",
   projectId: "admin-panel-d2bfc",
   storageBucket: "admin-panel-d2bfc.appspot.com",
@@ -11,4 +13,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
 export const auth = getAuth();
+export const storage = getStorage(app);
