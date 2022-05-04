@@ -53,11 +53,7 @@ function App() {
               />
               <Route
                 path="new"
-                element={
-                  <RequireAuth>
-                    <New inputs={userInputs} title="Add New User" />
-                  </RequireAuth>
-                }
+                element={<New inputs={userInputs} title="Add New User" />}
               />
             </Route>
             <Route path="products">
